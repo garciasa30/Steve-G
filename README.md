@@ -1,2 +1,2 @@
 # Steve-G
-Ansible Yml, Ansible scripts, Bash scripts, cloud diagram, 
+Linux scripts and Ansible Scripts from my CyberClass 

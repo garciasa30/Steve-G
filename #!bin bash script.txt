@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "This is my first script"
+echo "Today's date is $(date)"
+echo "Uname info is $(uname -a)"
+
+my_ip=$(ifconfig | head | tail -1 | awk -F' ' '{print $2}')
+echo "My IP address is $my_ip"
+echo "My hostname is $HOSTNAME"
+
+mkdir ~/my_research 2>/dev/null
+find /home -type f -perm 777 2>/dev/null >> ~/my_research/sys_info.txt
+ps aux | head >> ~/my_research/sys_info.txt
